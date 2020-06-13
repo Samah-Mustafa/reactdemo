@@ -23,8 +23,9 @@ class MovieContainer extends Component {
   shouldComponentUpdate(nextProps, nextState){
       if(this.props.movies !== nextProps.movies) {
         return true;
-      }
+      }else{
       return false;
+    } /// else were added
   }
 
   render() {

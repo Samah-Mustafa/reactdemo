@@ -12,6 +12,7 @@ import StarInfo from './StarInfo';
 import MovieList from './MovieList';
 import Trailer from './Trailer';
 import TrailerList from './TrailerList';
+import React , { Component } from 'react'; // {Component } were added
 
 export {Cast, CastList, ChartData, DisplayMsg, MovieList, Poster, Description,
   StarInfo, MovieInfo, Title, SubTitle, SubTitleWithIcon,

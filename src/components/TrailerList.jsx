@@ -12,11 +12,19 @@ export default function TrailerList({data}) {
     });
 
     const style = {
-      marginTop: '15px'
-    };
+      marginTop: '15px',
+      marginBottom: '50px',
+      // marginLeft: 'auto',
+      // marginRight: 'auto',
+      display: 'flex',
+      flexWrap: 'wrap'
+      // flexDirection:'row', 
+      // alignItems:'center',
+      // justifyContent:'center'
+    }; // flex were added
 
     const titleStyle = {
-      paddingLeft: '20px'
+      paddingLeft: '20px',
     };
 
     if (trailers.length !== 0){

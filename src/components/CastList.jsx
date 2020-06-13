@@ -12,14 +12,17 @@ export default function CastList({data}) {
   `;
     let casts = data.map(function(cast) {
       if(cast.profile_path != null) {
+        console.log(cast, "people")
         return(
           <Col xs={4} sm={3} md={2} key={cast.id} >
-            <StyledLink to={'/star/'+cast.id} ><Cast cast={cast} /></StyledLink>
+            <StyledLink to={'/star/'+cast.id} ><Cast cast={cast} /></StyledLink> 
           </Col>
-        );
-      }
+      
+        ); // cast is loading
+      }else{
 
       return null;
+      } // else were added
     });
 
     return(
